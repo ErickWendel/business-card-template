@@ -36,8 +36,6 @@
     grid-row: 1;
     align-content: start;
     grid-gap: 1.5vmin;
-    animation: inLeft;
-    animation-duration: 1s;
   }
   .name {
     font-size: 2em;
@@ -61,14 +59,10 @@
     font-weight: 700;
     font-size: 0.9em;
     grid-column: 1;
-    animation: inLeft;
-    animation-duration: 1s;
   }
   .bottom .right {
     grid-column: 3;
     align-self: end;
-    animation: inRight;
-    animation-duration: 1s;
   }
   .website {
     color: white;
@@ -100,8 +94,6 @@
     background: -webkit-linear-gradient(to right, gray, green);
     background: linear-gradient(to right, gray, green);
     transform: rotate(38deg);
-    animation: inRotate;
-    animation-duration: 1s;
   }
   @keyframes inRotate {
     0% {
