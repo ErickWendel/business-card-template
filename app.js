@@ -36,7 +36,7 @@ window.onload = () => {
         console.warn('queryString not found using default values...')
     }
     const getLength = obj => Object.keys(obj).length
-    const isMissingKeysOnQueryString = getLength(defaultValues) === getLength(qs)
+    const isMissingKeysOnQueryString = getLength(defaultValues) === getLength(qs || {})
     if (!isMissingKeysOnQueryString) {
         console.warn(`All missing parameters will come from default values\nRequired parameters are`, Object.keys(defaultValues))
     }
