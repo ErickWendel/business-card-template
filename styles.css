@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/raleway/v17/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrQ.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/s/raleway/v17/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVs9pbCIPrQ.ttf) format('truetype');
+  }
+  .business-card {
+    display: grid;
+    overflow: hidden;
+    position: relative;
+    line-height: 1.6;
+    font-size: 4.5vmin;
+    width: 100vmin;
+    height: 60vmin;
+    padding: 7vmin;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.4);
+  }
+  .content {
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+  }
+  .top {
+    display: grid;
+    grid-column: 0.33333333;
+    grid-row: 1;
+    align-content: start;
+    grid-gap: 1.5vmin;
+    animation: inLeft;
+    animation-duration: 1s;
+  }
+  .name {
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .profession {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 700;
+  }
+  .bottom {
+    display: grid;
+    grid-column: 0.33333333;
+    grid-row: 3;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: end;
+  }
+  .bottom .left {
+    font-weight: 700;
+    font-size: 0.9em;
+    grid-column: 1;
+    animation: inLeft;
+    animation-duration: 1s;
+  }
+  .bottom .right {
+    grid-column: 3;
+    align-self: end;
+    animation: inRight;
+    animation-duration: 1s;
+  }
+  .website {
+    color: white;
+    font-weight: 400;
+  }
+  .location {
+    white-space: nowrap;
+    text-align: right;
+    color: black;
+    text-transform: uppercase;
+    font-size: 0.9em;
+  }
+  .background {
+    z-index: 1;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .slice {
+    top: -59vmin;
+    left: -1vmin;
+    position: absolute;
+    width: 90vmin;
+    height: 150vmin;
+    background: gray;
+    background: -webkit-linear-gradient(to right, gray, green);
+    background: linear-gradient(to right, gray, green);
+    transform: rotate(38deg);
+    animation: inRotate;
+    animation-duration: 1s;
+  }
+  @keyframes inRotate {
+    0% {
+      transform: translateX(-100vmin) rotate(15deg);
+    }
+    100% {
+      transform: translateX(0) rotate(38deg);
+    }
+  }
+  @keyframes inLeft {
+    0% {
+      transform: translateX(-100vmin);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes inRight {
+    0% {
+      transform: translateX(100vmin);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  html {
+    height: 100%;
+  }
+  body {
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+  }
+  /* Fire */
+  /* Water */
+  
